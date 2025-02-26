@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primaryTextColor: #ffffff;
+    --secondaryTextColor: #b3b3b3;
+    --gradientColor: linear-gradient(45deg, #6a11cb, #6147F2, #F765A3);
+    --primaryBackgroundColor: #080C1F;
+    --secondaryBackgroundColor: rgba(255, 255, 255, 0.1);
+    --backgroundHover: rgba(255, 255, 255, 0.2)
+}
+
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--primaryBackgroundColor);
+    color: var(--primaryTextColor);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+.heropage {
+    margin-top: 100px;
+    width: 100%;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;  
+  background-color: var(--primaryBackgroundColor);
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; 
+}
+
+.logo {
+    width: 140px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--primaryTextColor);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.mycv {
+    padding: 10px 25px;
+    background: var(--gradientColor);
+    color: var(--primaryTextColor);
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.mycv:hover {
+    opacity: 0.8;
+}
+
+.content {
+    display: flex;
+    align-items:center;
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.profile-card {
+    width: 395px;
+}
+
+.fotomella {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.text-hero {
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.contacts {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    background: var(--secondaryBackgroundColor);
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: var(--primaryTextColor);
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.social-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.social-icon {
+    margin-right: 8px;
+    height: 18px;
+    width: 18px;
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+}
+
+.marquee h1 {
+    display: inline-block;
+    font-size: 250px;
+    opacity: 0.05;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.about {
+  margin-top: 20px;
+  padding: 50px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+}
+
+.about h2 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: justify;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.section-pendidikan,
+.section-pengalaman,
+.section-organisasi,
+.section {
+  margin: 40px;
+  
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.section-pendidikan p,
+.section-pengalaman p,
+.section-organisasi p,
+.section p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.content-pengalaman ul,
+.content-organisasi ul {
+  margin-left: 20px;
+  margin-right :20px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.date {
+  font-size: 14px;
+  color: var(--secondaryTextColor);
+  display: block;
+  margin: 5px 0;
+}
+
+.section-pendidikan,
+.section-pengalaman,
+.section-organisasi,
+.section {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.section-pendidikan {
+  display: flex;
+  gap: 100px;
+}
+
+.telkomuniv, .smktelkom {
+  flex: 1;  
+}
+
+.portfolio {
+  margin-top: 80px;
+  display: flex;
+  gap: 20px; 
+}
+
+.portfolio h2{
+  display: flex;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card {
+  width: 320px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.card .card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card .card-content {
+  margin-top: 12px;
+}
+
+
+
+@media (max-width: 768px) {  
+
+  
+    .heropage {
+        margin-top: 60px;
+    }
+    
+    .content {
+      flex-direction: column;
+      align-items: center;
+      text-align: justify;
+    }
+    h1 {
+      font-size: 28px;
+    }
+  
+    p {
+        font-size: 14px;
+    }
+    
+    .social-btn {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+        
+    .profile-card {
+        width: 40%;
+    }
+    
+    .marquee h1 {
+        font-size: 100px;
+    }
+    
+    .about {
+        padding: 30px 15px;
+    }
+    
+    .section-pendidikan {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .portfolio {
+      flex-direction: column;
+      align-items: center;
+  }
+    
+    .card {
+        width: 90%;
+    }
+}
+
+
